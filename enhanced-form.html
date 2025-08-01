@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    header, main, footer {
+      max-width: 800px;
+      margin: auto;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 15px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    ul {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates advanced HTML5 content elements and a complete form with validation.</p>
+  </header>
+
+  <main>
+    <!-- Section: Lists -->
+    <section>
+      <h2>Favorite Programming Languages</h2>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>Go</li>
+      </ul>
+    </section>
+
+    <!-- Section: Table -->
+    <section>
+      <h2>Course Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Development</td>
+            <td>Monday</td>
+            <td>10:00 AM - 12:00 PM</td>
+          </tr>
+          <tr>
+            <td>Data Structures</td>
+            <td>Wednesday</td>
+            <td>2:00 PM - 4:00 PM</td>
+          </tr>
+          <tr>
+            <td>Database Systems</td>
+            <td>Friday</td>
+            <td>11:00 AM - 1:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Media -->
+    <section>
+      <h2>Media Gallery</h2>
+      <figure>
+        <img src="https://via.placeholder.com/600x300" alt="Sample image" width="100%" />
+        <figcaption>Sample Image Caption</figcaption>
+      </figure>
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <video controls width="100%">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <!-- Section: HTML5 Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="POST" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" max="100" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Login Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="5" pattern="^[a-zA-Z0-9_]+$" />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" />
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" required minlength="6" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="course">Choose a course:</label>
+          <select id="course" name="course" required>
+            <option value="">--Select--</option>
+            <option value="frontend">Frontend Development</option>
+            <option value="backend">Backend Development</option>
+            <option value="fullstack">Full Stack Development</option>
+          </select>
+
+          <label for="about">Tell us about yourself:</label>
+          <textarea id="about" name="about" rows="4" placeholder="Write something..."></textarea>
+
+          <label>
+            <input type="checkbox" name="subscribe" value="yes" checked />
+            Subscribe to newsletter
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Register" />
+        <input type="reset" value="Reset" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Melkamu Wako. All rights reserved.</p>
+  </footer>
+</body>
+</html>
